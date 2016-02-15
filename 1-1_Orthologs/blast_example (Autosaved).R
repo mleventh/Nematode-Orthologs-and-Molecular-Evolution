@@ -3,7 +3,7 @@ install.packages('reshape')
 library(reshape)
 
 read.table('1-1_elegans.remanei.txt', skip=1, stringsAsFactors=FALSE)      -> dataFrame
-names(dataFrame1)
+names(dataFrame)
 dataFrame[c("V2","V3")]
 dataFrame[c("V2","V3")] -> elegansRemanei
 names(elegansRemanei) <- c("elegans", "ortholog")
