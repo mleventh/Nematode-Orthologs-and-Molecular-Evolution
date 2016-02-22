@@ -1,4 +1,4 @@
-       elegans     brenneri.x     briggsae.x      remanei.x     brenneri.y
+            elegans     brenneri.x     briggsae.x      remanei.x     brenneri.y
 1    WBGene00000004 WBGene00164587 WBGene00025215 WBGene00058173 WBGene00164587
 2    WBGene00000005 WBGene00156759 WBGene00041961 WBGene00072979 WBGene00156759
 3    WBGene00000008 WBGene00143161 WBGene00029323 WBGene00064649 WBGene00143161
