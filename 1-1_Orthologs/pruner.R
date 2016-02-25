@@ -34,8 +34,8 @@ briggsaeElegans["comparator4"] <- "elegans"
 read.table('1-1_briggsae.remanei.txt', skip=1, stringsAsFactors=FALSE)      -> dataFrame
 names(dataFrame)
 dataFrame[c("V4","V2")]
-dataFrame[c("V4","V2")] -> briggsaeRemanei
-dataFrame[c("V2","V4")] -> remaneiBriggsae
+dataFrame[c("V2","V4")] -> briggsaeRemanei
+dataFrame[c("V4","V2")] -> remaneiBriggsae
 names(briggsaeRemanei) <- c("briggsae", "ortholog")
 names(remaneiBriggsae) <- c("remanei","ortholog")
 briggsaeRemanei["comparator4"] <- "remanei"
@@ -114,12 +114,11 @@ combined3
 combined4 <- na.omit(combined4)
 combined4
 
-
 pruned1 <- merge(combined, combined2, by="elegans")
-pruned2 <- merge(combined3, combined4, by="elegans")
+pruned2 <- merge(pruned1, combined3, by="elegans")
 prunedFinal <- merge(pruned1, pruned2, by="elegans")
 
-print(pruned1)
+print(prunedFinal)
 #print(combined2)
 
 #pruned <- do.call(rbind, list(combined, combined2))
